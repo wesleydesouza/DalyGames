@@ -3,7 +3,7 @@ import { GameCard } from "@/components/GameCard";
 import { Input } from "@/components/Input";
 import { GameProps } from "@/utils/game";
 
-export async function getData(title: string) {
+async function getData(title: string) {
   try {
     const decodeTitle = decodeURI(title);
 
