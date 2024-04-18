@@ -3,7 +3,7 @@ import { GameCard } from "@/components/GameCard";
 import { Input } from "@/components/Input";
 import { GameProps } from "@/utils/game";
 
-export const getData = async (title: string) => {
+export async function getData(title: string) {
   try {
     const decodeTitle = decodeURI(title);
 
@@ -14,7 +14,7 @@ export const getData = async (title: string) => {
   } catch (error) {
     return null;
   }
-};
+}
 
 export default async function Search({
   params: { title },
